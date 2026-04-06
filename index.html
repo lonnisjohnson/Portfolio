@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lonnis Johnson</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="grid-bg"></div>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-logo">LJ<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-status"><span class="status-dot"></span>Available for work</div>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" class="mob-link">Home</a>
+        <a href="#about" class="mob-link">About</a>
+        <a href="#experience" class="mob-link">Work</a>
+        <a href="#projects" class="mob-link">Projects</a>
+        <a href="#contact" class="mob-link">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-left">
+            <div class="hero-tag"> Web Developer</div>
+            <h1 class="hero-name">
+                <span class="line">LONNIS</span>
+                <span class="line accent-text">JOHNSON</span>
+            </h1>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View Work</a>
+                <a href="#contact" class="btn-outline">Get in Touch</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/moxdrax" target="_blank">GitHub ↗</a>
+                <a href="https://linkedin.com/in/lonnisjohnson" target="_blank">LinkedIn ↗</a>
+                <a href="mailto:lonnisjohnson@gmail.com">Email ↗</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="photo-frame">
+                <img src="High-contrast portrait in shadows.png" alt="Lonnis Johnson"
+                    onerror="this.src='https://ui-avatars.com/api/?name=LJ&size=500&background=0d0d0d&color=aaff00&bold=true&font-size=0.38'" />
+                <div class="photo-corner tl"></div>
+                <div class="photo-corner tr"></div>
+                <div class="photo-corner bl"></div>
+                <div class="photo-corner br"></div>
+                <div class="photo-tag mono">Ernakulam, India</div>
+            </div>
+            <div class="stats-row">
+                <div class="stat">
+                    <div class="stat-num">2+</div>
+                    <div class="stat-label">Internships</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-num">4+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-num">76.6%</div>
+                    <div class="stat-label">MCA Score</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+        <div class="section-header">
+            <span class="section-num mono">01</span>
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-left">
+                <p class="big-quote">"Building things<br><span class="accent-text">that matter."</span></p>
+            </div>
+            <div class="about-right">
+                <p>I'm an MCA student at Rajagiri College of Social Sciences, Kerala, with a strong foundation in
+                    software development and modern web technologies.</p>
+                <p>Experienced in React and full-stack development through internships and academic projects, I have a
+                    keen interest in building performant, user-centric applications — from gesture-controlled games
+                    powered by computer vision to full-stack e-commerce platforms.</p>
+                <div class="edu-cards">
+                    <div class="edu-card reveal">
+                        <div class="edu-year mono">2024 – 2026</div>
+                        <div class="edu-degree">Master of Computer Applications</div>
+                        <div class="edu-school">Rajagiri College of Social Sciences</div>
+                        <div class="edu-score">76.6%</div>
+                    </div>
+                    <div class="edu-card reveal">
+                        <div class="edu-year mono">2021 – 2024</div>
+                        <div class="edu-degree">Bachelor of Computer Applications</div>
+                        <div class="edu-school">Rajagiri College of Management & Applied Science</div>
+                        <div class="edu-score">80.1%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section reveal">
+        <div class="section-header">
+            <span class="section-num mono">02</span>
+            <h2 class="section-title">Tech Stack</h2>
+        </div>
+        <div class="skills-flat-grid">
+            <div class="skill-tile reveal"><i class="devicon-python-plain"></i><span>Python</span></div>
+            <div class="skill-tile reveal"><i class="devicon-java-plain"></i><span>Java</span></div>
+            <div class="skill-tile reveal"><i class="devicon-c-plain"></i><span>C</span></div>
+            <div class="skill-tile reveal"><i class="devicon-cplusplus-plain"></i><span>C++</span></div>
+            <div class="skill-tile reveal"><i class="devicon-php-plain"></i><span>PHP</span></div>
+            <div class="skill-tile reveal"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+            <div class="skill-tile reveal"><i class="devicon-react-original"></i><span>React.js</span></div>
+            <div class="skill-tile reveal"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+            <div class="skill-tile reveal"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+            <div class="skill-tile reveal"><i class="devicon-tailwindcss-original"></i><span>Tailwind CSS</span></div>
+            <div class="skill-tile reveal"><i class="devicon-laravel-plain"></i><span>Laravel</span></div>
+            <div class="skill-tile reveal"><i class="devicon-django-plain"></i><span>Django</span></div>
+            <div class="skill-tile reveal"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+            <div class="skill-tile reveal"><i class="devicon-oracle-original"></i><span>Oracle SQL</span></div>
+            <div class="skill-tile reveal"><i class="devicon-sqlite-plain"></i><span>SQLite</span></div>
+            <div class="skill-tile reveal"><i class="devicon-opencv-plain"></i><span>OpenCV</span></div>
+            <div class="skill-tile reveal"><i class="devicon-google-plain"></i><span>MediaPipe</span></div>
+            <div class="skill-tile reveal"><i class="devicon-git-plain"></i><span>Git</span></div>
+            <div class="skill-tile reveal"><i class="devicon-github-original"></i><span>GitHub</span></div>
+            <div class="skill-tile reveal"><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+        <div class="section-header">
+            <span class="section-num mono">03</span>
+            <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="exp-list">
+            <div class="exp-item reveal">
+                <div class="exp-left">
+                    <div class="exp-date mono">Jan – Mar 2026</div>
+                    <div class="exp-badge">Latest</div>
+                </div>
+                <div class="exp-right">
+                    <h3>React Developer Intern</h3>
+                    <div class="exp-company">Cubet Techno Labs Pvt Ltd</div>
+                    <ul>
+                        <li>Built and maintained 10+ reusable UI components using React and Tailwind CSS.</li>
+                        <li>Optimized component rendering and state management, reducing initial page load by ~20%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exp-item reveal">
+                <div class="exp-left">
+                    <div class="exp-date mono">Apr – May 2025</div>
+                </div>
+                <div class="exp-right">
+                    <h3>Web Development Intern</h3>
+                    <div class="exp-company">Revstar Solutions</div>
+                    <ul>
+                        <li>Executed SEO optimizations, improving website visibility and search indexing.</li>
+                        <li>Contributed to content updates across 5+ web pages to enhance user engagement.</li>
+                        <li>Improved page load performance by optimizing frontend assets and layout structure.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+        <div class="section-header">
+            <span class="section-num mono">04</span>
+            <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card featured reveal">
+                <div class="project-number mono">01</div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>PyAutoGUI</span>
+                    </div>
+                    <h3>Gesture-Based Game Controller</h3>
+                    <p>Real-time hand gesture recognition system controlling PC gameplay via webcam. Tracked hand
+                        landmarks with MediaPipe and mapped gestures to keyboard actions with cooldown logic for smooth,
+                        stable controls.</p>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-number mono">02</div>
+                <div class="project-body">
+                    <div class="project-tags"><span>React</span><span>Tailwind CSS</span></div>
+                    <h3>Houseboat Website</h3>
+                    <p>Responsive website with reusable React components and a clean, modern UI.</p>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-number mono">03</div>
+                <div class="project-body">
+                    <div class="project-tags"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
+                    <h3>Fashion Store E-Commerce</h3>
+                    <p>Fashion store with MVC architecture</p>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-number mono">04</div>
+                <div class="project-body">
+                    <div class="project-tags"><span>Java</span><span>MySQL</span></div>
+                    <h3>Student Management System</h3>
+                    <p>Desktop-based student management app with complete CRUD functionality.</p>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-number mono">05</div>
+                <div class="project-body">
+                    <div class="project-tags"><span>Python</span><span>Django</span></div>
+                    <h3>Apartment Rental Management System</h3>
+                    <p>Apartment rental management app with complete CRUD functionality.</p>
+                </div>
+                <div class="project-arrow">↗</div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-number mono">06</div>
+                <div class="project-body">
+                    <div class="project-tags"><span>PHP</span><span>MySQL</span></div>
+                    <h3>Light Store</h3>
+                    <p>Light store with complete CRUD functionality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section reveal">
+        <div class="section-header">
+            <span class="section-num mono">05</span>
+            <h2 class="section-title">Certifications</h2>
+        </div>
+        <div class="certs-list">
+            <div class="cert-row reveal"><span class="cert-name">Advanced AI Program</span><span
+                    class="cert-line"></span><span class="cert-meta mono">Hands-on ML · June 2025</span></div>
+            <div class="cert-row reveal"><span class="cert-name">Database Administration Workshop</span><span
+                    class="cert-line"></span><span class="cert-meta mono">Design & Security · Oct 2024</span></div>
+            <div class="cert-row reveal"><span class="cert-name">Power Communication Workshop</span><span
+                    class="cert-line"></span><span class="cert-meta mono">Professional Comms · July 2024</span></div>
+            <div class="cert-row reveal"><span class="cert-name">Core Python & Data Science</span><span
+                    class="cert-line"></span><span class="cert-meta mono">Value Added Course · 2022–23</span></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section reveal">
+        <div class="section-header">
+            <span class="section-num mono">06</span>
+            <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="contact-inner">
+            <p class="contact-headline">Let's build something<br><span class="accent-text">great together.</span></p>
+            <div class="contact-links">
+                <a href="mailto:lonnisjohnson@gmail.com" class="contact-link reveal">
+                    <span class="contact-type mono">Email</span>
+                    <span class="contact-value">lonnisjohnson@gmail.com</span>
+                    <span class="cl-arrow">↗</span>
+                </a>
+                <a href="tel:+919633155080" class="contact-link reveal">
+                    <span class="contact-type mono">Phone</span>
+                    <span class="contact-value">+91 9633155080</span>
+                    <span class="cl-arrow">↗</span>
+                </a>
+                <a href="https://linkedin.com/in/lonnisjohnson" target="_blank" class="contact-link reveal">
+                    <span class="contact-type mono">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/lonnisjohnson</span>
+                    <span class="cl-arrow">↗</span>
+                </a>
+                <a href="https://github.com/moxdrax" target="_blank" class="contact-link reveal">
+                    <span class="contact-type mono">GitHub</span>
+                    <span class="contact-value">github.com/moxdrax</span>
+                    <span class="cl-arrow">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span>© 2026 Lonnis Johnson</span>
+        <span class="mono" style="color:var(--accent);font-size:0.75rem;">Ernakulam, India</span>
+    </footer>
+
+    <button id="backToTop" title="Top">↑</button>
+
+    <script>
+        // Cursor
+        const cursor = document.getElementById('cursor');
+        let mx = 0, my = 0, fx = 0, fy = 0;
+        document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.cssText = `left:${mx}px;top:${my}px`; });
+
+        // Hamburger
+        const ham = document.getElementById('hamburger');
+        const mmenu = document.getElementById('mobileMenu');
+        ham.addEventListener('click', () => { ham.classList.toggle('open'); mmenu.classList.toggle('show'); });
+        document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', () => { ham.classList.remove('open'); mmenu.classList.remove('show'); }));
+
+        // Back to top
+        const btt = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => { btt.classList.toggle('visible', window.scrollY > 400); });
+        btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Reveal
+        const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.08 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    </script>
+</body>
+
+</html>

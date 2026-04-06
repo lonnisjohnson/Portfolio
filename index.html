@@ -17,7 +17,6 @@
 
 <body>
 
-    <div class="cursor" id="cursor"></div>
     <div class="grid-bg"></div>
 
     <!-- NAV -->
@@ -52,16 +51,12 @@
             <div class="hero-cta">
                 <a href="#projects" class="btn-primary">View Work</a>
                 <a href="#contact" class="btn-outline">Get in Touch</a>
-            </div>
-            <div class="hero-socials">
-                <a href="https://github.com/moxdrax" target="_blank">GitHub ↗</a>
-                <a href="https://linkedin.com/in/lonnisjohnson" target="_blank">LinkedIn ↗</a>
-                <a href="mailto:lonnisjohnson@gmail.com">Email ↗</a>
+                <a href="https://drive.google.com/file/d/17jBHvnk4DjTbz8mU4GRSJ7TqN6Blzn3G/view?usp=sharing" target="_blank" class="btn-resume">Resume ↗</a>
             </div>
         </div>
         <div class="hero-right">
             <div class="photo-frame">
-                <img src="High-contrast portrait in shadows.png" alt="Lonnis Johnson"
+                <img src="profilepic.png" alt="Lonnis Johnson"
                     onerror="this.src='https://ui-avatars.com/api/?name=LJ&size=500&background=0d0d0d&color=aaff00&bold=true&font-size=0.38'" />
             </div>
         </div>
@@ -73,29 +68,24 @@
             <span class="section-num mono">01</span>
             <h2 class="section-title">About Me</h2>
         </div>
-        <div class="about-grid">
-            <div class="about-left">
-                <p class="big-quote">"Building things<br><span class="accent-text">that matter."</span></p>
-            </div>
-            <div class="about-right">
-                <p>I'm an MCA student at Rajagiri College of Social Sciences, Kerala, with a strong foundation in
-                    software development and modern web technologies.</p>
-                <p>Experienced in React and full-stack development through internships and academic projects, I have a
-                    keen interest in building performant, user-centric applications — from gesture-controlled games
-                    powered by computer vision to full-stack e-commerce platforms.</p>
-                <div class="edu-cards">
-                    <div class="edu-card reveal">
-                        <div class="edu-year mono">2024 – 2026</div>
-                        <div class="edu-degree">Master of Computer Applications</div>
-                        <div class="edu-school">Rajagiri College of Social Sciences</div>
-                        <div class="edu-score">76.6%</div>
-                    </div>
-                    <div class="edu-card reveal">
-                        <div class="edu-year mono">2021 – 2024</div>
-                        <div class="edu-degree">Bachelor of Computer Applications</div>
-                        <div class="edu-school">Rajagiri College of Management & Applied Science</div>
-                        <div class="edu-score">80.1%</div>
-                    </div>
+        <div class="about-content">
+            <p>I'm an MCA student at Rajagiri College of Social Sciences, Kerala, with a strong foundation in
+                software development and modern web technologies.</p>
+            <p>Experienced in React through internships and academic projects, I have a
+                keen interest in building performant, user centric applications from gesture controlled games
+                powered by computer vision to full-stack e-commerce platforms.</p>
+            <div class="edu-cards">
+                <div class="edu-card reveal">
+                    <div class="edu-year mono">2024 – 2026</div>
+                    <div class="edu-degree">Master of Computer Applications</div>
+                    <div class="edu-school">Rajagiri College of Social Sciences</div>
+                    <div class="edu-score">76.6%</div>
+                </div>
+                <div class="edu-card reveal">
+                    <div class="edu-year mono">2021 – 2024</div>
+                    <div class="edu-degree">Bachelor of Computer Applications</div>
+                    <div class="edu-school">Rajagiri College of Management &amp; Applied Science</div>
+                    <div class="edu-score">80.1%</div>
                 </div>
             </div>
         </div>
@@ -290,10 +280,6 @@
     <button id="backToTop" title="Top">↑</button>
 
     <script>
-        // Cursor
-        const cursor = document.getElementById('cursor');
-        let mx = 0, my = 0, fx = 0, fy = 0;
-        document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.cssText = `left:${mx}px;top:${my}px`; });
 
         // Hamburger
         const ham = document.getElementById('hamburger');

@@ -529,11 +529,13 @@ img {
 
 .section-header {
   display: flex;
-  align-items: baseline;
-  gap: 16px;
-  margin-bottom: 52px;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 28px;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 16px;
+  padding-bottom: 12px;
+  text-align: center;
 }
 
 .section-num {
@@ -674,7 +676,7 @@ img {
 }
 
 .skill-tile:hover span {
-  color: var(--white);
+  color: var(--accent);
 }
 
 
@@ -913,26 +915,16 @@ img {
    CONTACT
 ============================== */
 .contact-inner {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
-  align-items: start;
-}
-
-.contact-headline {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
-  line-height: 1.05;
-  letter-spacing: 2px;
-  color: var(--white);
-  position: sticky;
-  top: 120px;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-links {
   display: flex;
   flex-direction: column;
   gap: 0;
+  width: 100%;
+  max-width: 560px;
 }
 
 .contact-link {
@@ -940,12 +932,7 @@ img {
   align-items: center;
   gap: 20px;
   padding: 20px 0;
-  border-bottom: 1px solid var(--border);
   transition: background 0.2s;
-}
-
-.contact-link:first-child {
-  border-top: 1px solid var(--border);
 }
 
 .contact-link:hover .contact-value {
@@ -1073,6 +1060,14 @@ img {
 }
 
 @media(max-width:768px) {
+
+  body {
+    cursor: auto;
+  }
+
+  .cursor {
+    display: none;
+  }
 
   .nav-links,
   .nav-status {

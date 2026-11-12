@@ -179,7 +179,7 @@ img {
   border: none;
   flex-direction: column;
   gap: 5px;
-  cursor: none;
+  cursor: pointer;
   padding: 4px;
 }
 
@@ -303,7 +303,9 @@ img {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   border-radius: 2px;
+  border: 1px solid var(--accent);
   transition: 0.25s;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -322,6 +324,7 @@ img {
   text-transform: uppercase;
   border-radius: 2px;
   transition: 0.25s;
+  cursor: pointer;
 }
 
 .btn-outline:hover {
@@ -341,6 +344,7 @@ img {
   text-transform: uppercase;
   border-radius: 2px;
   transition: 0.25s;
+  cursor: pointer;
 }
 
 .btn-resume:hover {
@@ -567,7 +571,6 @@ img {
   margin-bottom: 18px;
 }
 
-
 .edu-cards {
   display: flex;
   flex-direction: column;
@@ -606,6 +609,13 @@ img {
 .edu-school {
   font-size: 0.82rem;
   color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.edu-location {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
   margin-bottom: 8px;
 }
 
@@ -670,6 +680,24 @@ img {
   color: var(--accent);
 }
 
+.concepts-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.concept-tag {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 2px;
+  letter-spacing: 0.05em;
+}
 
 /* ==============================
    EXPERIENCE
@@ -700,7 +728,15 @@ img {
   font-size: 0.72rem;
   color: var(--text-muted);
   letter-spacing: 0.08em;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.exp-location {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-top: 8px;
   display: block;
 }
 
@@ -772,6 +808,7 @@ img {
   transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .project-card::before {
@@ -989,7 +1026,7 @@ img {
   border: none;
   font-size: 1rem;
   font-weight: 700;
-  cursor: none;
+  cursor: pointer;
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none;

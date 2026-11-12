@@ -1,370 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080909" />
     <title>Lonnis Johnson</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="apple-touch-icon" href="favicon.png" />
+    <meta
+      name="description"
+      content="Portfolio of Lonnis Johnson, Freelance Web Developer and Full Stack Developer in Kochi."
+    />
+    <meta name="author" content="Lonnis Johnson" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lonnis Johnson" />
+    <meta
+      property="og:description"
+      content="Freelance Web Developer and Full Stack Developer in Kochi. React.js, Node.js, Express.js, MySQL, Python, PHP."
+    />
+    <meta property="og:image" content="/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lonnis Johnson" />
+    <meta
+      name="twitter:description"
+      content="Freelance Web Developer and Full Stack Developer in Kochi."
+    />
+    <meta name="twitter:image" content="/og.jpg" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-512.png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=JetBrains+Mono:wght@400;700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-    <div class="grid-bg"></div>
-
-    <!-- NAV -->
-    <nav class="nav">
-        <div class="nav-logo">LJ<span class="dot">.</span></div>
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Work</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </nav>
-
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#hero" class="mob-link">Home</a>
-        <a href="#about" class="mob-link">About</a>
-        <a href="#experience" class="mob-link">Work</a>
-        <a href="#projects" class="mob-link">Projects</a>
-        <a href="#contact" class="mob-link">Contact</a>
-    </div>
-
-    <!-- HERO -->
-    <section id="hero" class="hero">
-        <div class="hero-left">
-            <div class="hero-tag"> Web Developer</div>
-            <h1 class="hero-name">
-                <span class="line">LONNIS</span>
-                <span class="line accent-text">JOHNSON</span>
-            </h1>
-            <div class="hero-cta">
-                <a href="#projects" class="btn-primary">View Work</a>
-                <a href="#contact" class="btn-outline">Get in Touch</a>
-                <a href="https://drive.google.com/file/d/1p_EdJBGhzo-Oyyd-gD3VEvmZe5hQxJzg/view?usp=sharing"
-                    target="_blank" class="btn-resume">Resume</a>
-            </div>
-        </div>
-        <div class="hero-right">
-            <div class="photo-frame">
-                <img src="profilepicture.png" alt="Lonnis Johnson"
-                    onerror="this.src='https://ui-avatars.com/api/?name=LJ&size=500&background=0d0d0d&color=aaff00&bold=true&font-size=0.38'" />
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section reveal">
-        <div class="section-header">
-            <span class="section-num mono">01</span>
-            <h2 class="section-title">About Me</h2>
-        </div>
-        <div class="about-content">
-            <p>Freelance Web Developer with hands on experience designing, developing, and deploying responsive full
-                stack web applications and
-                business websites. Proficient in Python, PHP, React.js, JavaScript, Node.js, Express.js, MySQL, REST
-                APIs, and modern web
-                development technologies. Experience in developing company websites, job portals, and database driven
-                applications, with a strong focus
-                on responsive design, functionality, and user experience.</p>
-            <div class="edu-cards">
-                <div class="edu-card reveal">
-                    <div class="edu-year mono">2024 – 2026</div>
-                    <div class="edu-degree">Master of Computer Applications</div>
-                    <div class="edu-school">Rajagiri College of Social Sciences</div>
-                    <div class="edu-score">76.6%</div>
-                </div>
-                <div class="edu-card reveal">
-                    <div class="edu-year mono">2021 – 2024</div>
-                    <div class="edu-degree">Bachelor of Computer Applications</div>
-                    <div class="edu-school">Rajagiri College of Management &amp; Applied Science</div>
-                    <div class="edu-score">80.1%</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section reveal">
-        <div class="section-header">
-            <span class="section-num mono">02</span>
-            <h2 class="section-title">Tech Stack</h2>
-        </div>
-        <div class="skills-flat-grid">
-            <div class="skill-tile reveal"><i class="devicon-python-plain"></i><span>Python</span></div>
-            <div class="skill-tile reveal"><i class="devicon-java-plain"></i><span>Java</span></div>
-            <div class="skill-tile reveal"><i class="devicon-c-plain"></i><span>C</span></div>
-            <div class="skill-tile reveal"><i class="devicon-cplusplus-plain"></i><span>C++</span></div>
-            <div class="skill-tile reveal"><i class="devicon-php-plain"></i><span>PHP</span></div>
-            <div class="skill-tile reveal"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
-            <div class="skill-tile reveal"><i class="devicon-express-original"></i><span>Express.js</span></div>
-            <div class="skill-tile reveal">
-                <i class="devicon-nodejs-plain"></i>
-                <span>Node.js</span>
-            </div>
-            <div class="skill-tile reveal">
-                <i class="devicon-fastapi-plain"></i>
-                <span>REST API</span>
-            </div>
-
-            <div class="skill-tile reveal"><i class="devicon-react-original"></i><span>React.js</span></div>
-            <div class="skill-tile reveal"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
-            <div class="skill-tile reveal"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
-            <div class="skill-tile reveal"><i class="devicon-bootstrap-plain"></i><span>Bootstrap</span></div>
-            <div class="skill-tile reveal"><i class="devicon-tailwindcss-original"></i><span>Tailwind CSS</span></div>
-            <div class="skill-tile reveal"><i class="devicon-laravel-plain"></i><span>Laravel</span></div>
-            <div class="skill-tile reveal"><i class="devicon-django-plain"></i><span>Django</span></div>
-            <div class="skill-tile reveal"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
-            <div class="skill-tile reveal"><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></div>
-            <div class="skill-tile reveal"><i class="devicon-oracle-original"></i><span>Oracle SQL</span></div>
-            <div class="skill-tile reveal"><i class="devicon-sqlite-plain"></i><span>SQLite</span></div>
-            <div class="skill-tile reveal"><i class="devicon-git-plain"></i><span>Git</span></div>
-            <div class="skill-tile reveal"><i class="devicon-github-original"></i><span>GitHub</span></div>
-            <div class="skill-tile reveal"><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
-        </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section reveal">
-        <div class="section-header">
-            <span class="section-num mono">03</span>
-            <h2 class="section-title">Experience</h2>
-        </div>
-        <div class="exp-list">
-            <div class="exp-item reveal">
-                <div class="exp-left">
-                    <div class="exp-date mono">Apr – Present 2026</div>
-                    <div class="exp-badge">Latest</div>
-                </div>
-                <div class="exp-right">
-                    <h3>Freelance Web Developer</h3>
-                    <div class="exp-company">Simtechon - Client project</div>
-                    <ul>
-                        <li>Developing and maintaining a responsive company website using React.js, with a focus on
-                            reusable UI components and modern
-                            frontend development practices.</li>
-                        <li>Building and integrating web functionality for a company job portal, including candidate
-                            applications and role-based employer and
-                            employee portals.</li>
-                        <li>Developing REST APIs using Express.js and MySQL to manage job postings, candidate
-                            registrations, and application data.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="exp-item reveal">
-                <div class="exp-left">
-                    <div class="exp-date mono">Jan – Mar 2026</div>
-                </div>
-                <div class="exp-right">
-                    <h3>React Developer Intern</h3>
-                    <div class="exp-company">Cubet Techno Labs Pvt Ltd</div>
-                    <ul>
-                        <li>Learned and applied core JavaScript and React concepts through hands-on practice.</li>
-                        <li>Developed a To-Do List application to understand component structure, state management, and
-                            event handling.</li>
-                        <li>Developed and deployed a responsive houseboat website using React.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="exp-item reveal">
-                <div class="exp-left">
-                    <div class="exp-date mono">Apr – May 2025</div>
-                </div>
-                <div class="exp-right">
-                    <h3>Web Development Intern</h3>
-                    <div class="exp-company">Revstar Solutions</div>
-                    <ul>
-                        <li>Built and deployed a static website for the company using modern web technologies.</li>
-                        <li>Performed basic SEO optimizations to improve website visibility and search indexing.</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section reveal">
-        <div class="section-header">
-            <span class="section-num mono">04</span>
-            <h2 class="section-title">Projects</h2>
-        </div>
-        <div class="projects-grid">
-
-            <a href="https://www.simtechon.com" target="_blank" rel="noopener noreferrer">
-                <div class="project-card reveal">
-                    <div class="project-number mono">01</div>
-                    <div class="project-body">
-                        <div class="project-tags">
-                            <span>React</span><span>Node.js</span><span>Express.js</span><span>REST
-                                API</span><span>MySQL</span><span>Tailwind CSS</span>
-                        </div>
-                        <h3>Simtechon Company Website</h3>
-                        <p>Developing a full-stack company website with an integrated job portal for candidate
-                            applications.
-                            Building REST APIs using Express.js and MySQL for job postings, candidate registration, and
-                            application management.
-                            Implementing separate employer and employee portals for applicant tracking and hiring
-                            workflows.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://galileahouseboat.com/" target="_blank" rel="noopener noreferrer">
-
-                <div class="project-card reveal">
-                    <div class="project-number mono">02</div>
-                    <div class="project-body">
-                        <div class="project-tags"><span>React</span><span>Tailwind CSS</span></div>
-                        <h3>Houseboat Website</h3>
-                        <p>Developed a responsive React-based website with reusable components and modern UI design.
-                            Integrated a booking system using Google Apps Script and Google Sheets for backend data
-                            handling, along with automated email notifications to streamline user bookings.</p>
-                    </div>
-                </div>
-            </a>
-            <div class="project-card  reveal">
-                <div class="project-number mono">03</div>
-                <div class="project-body">
-                    <div class="project-tags">
-                        <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>PyAutoGUI</span>
-                    </div>
-                    <h3>Gesture-Based Game Controller</h3>
-                    <p>Real-time hand gesture recognition system controlling PC gameplay via webcam. Tracked hand
-                        landmarks with MediaPipe and mapped gestures to keyboard actions with cooldown logic for smooth,
-                        stable controls.</p>
-                </div>
-            </div>
-            <div class="project-card reveal">
-                <div class="project-number mono">04</div>
-                <div class="project-body">
-                    <div class="project-tags"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
-                    <h3>E-Commerce Website</h3>
-                    <p>Developed a full-featured e-commerce platform using Laravel MVC architecture. Implemented
-                        secure user authentication, product management, shopping cart functionality, and order
-                        processing with MySQL database integration.</p>
-                </div>
-            </div>
-            <div class="project-card reveal">
-                <div class="project-number mono">05</div>
-                <div class="project-body">
-                    <div class="project-tags"><span>Java</span><span>MySQL</span></div>
-                    <h3>Student Management System</h3>
-                    <p>Developed a student management system using Java and MySQL. Implemented complete
-                        CRUD functionality for student records, including adding, updating, deleting, and retrieving
-                        student information with a user-friendly graphical interface.</p>
-                </div>
-            </div>
-            <div class="project-card reveal">
-                <div class="project-number mono">06</div>
-                <div class="project-body">
-                    <div class="project-tags"><span>Python</span><span>Django</span></div>
-                    <h3>Apartment Rental Management System</h3>
-                    <p>Developed an apartment rental management system using Django and MySQL. Implemented complete
-                        CRUD functionality for apartment listings, tenant management, and rental agreements with a
-                        user-friendly interface.</p>
-                </div>
-            </div>
-            <div class="project-card reveal">
-                <div class="project-number mono">07</div>
-                <div class="project-body">
-                    <div class="project-tags"><span>PHP</span><span>MySQL</span></div>
-                    <h3>Light Store</h3>
-                    <p>Developed a light store management system using PHP and MySQL. Implemented complete
-                        CRUD functionality for light products, inventory management, and sales tracking with a
-                        user-friendly interface.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section class="section reveal">
-        <div class="section-header">
-            <span class="section-num mono">05</span>
-            <h2 class="section-title">Certifications</h2>
-        </div>
-        <div class="certs-list">
-            <div class="cert-row reveal"><span class="cert-name">AI Aware</span><span
-                    class="cert-line"></span><span class="cert-meta mono">AI For All (Intel & Digital India)  · June 2025</span></div>
-            <div class="cert-row reveal"><span class="cert-name">AI Appreciate </span><span
-                    class="cert-line"></span><span class="cert-meta mono">AI For All (Intel & Digital India)  · June 2025</span></div>
-            <div class="cert-row reveal"><span class="cert-name">Advanced AI Program</span><span
-                    class="cert-line"></span><span class="cert-meta mono">Hands-on ML · June 2025</span></div>
-            <div class="cert-row reveal"><span class="cert-name">Database Administration Workshop</span><span
-                    class="cert-line"></span><span class="cert-meta mono">Design & Security · Oct 2024</span></div>
-            <div class="cert-row reveal"><span class="cert-name">Power Communication Workshop</span><span
-                    class="cert-line"></span><span class="cert-meta mono">Professional Comms · July 2024</span></div>
-            <div class="cert-row reveal"><span class="cert-name">Core Python & Data Science</span><span
-                    class="cert-line"></span><span class="cert-meta mono">Value Added Course · March 2023</span></div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section reveal">
-        <div class="section-header">
-            <span class="section-num mono">06</span>
-            <h2 class="section-title">Contact</h2>
-        </div>
-        <div class="contact-inner">
-            <div class="contact-links">
-                <a href="mailto:lonnisjohnson@gmail.com" class="contact-link reveal">
-                    <span class="contact-type mono">Email</span>
-                    <span class="contact-value">lonnisjohnson@gmail.com</span>
-                    <span class="cl-arrow">↗</span>
-                </a>
-                <a href="tel:+919633155080" class="contact-link reveal">
-                    <span class="contact-type mono">Phone</span>
-                    <span class="contact-value">+91 9633155080</span>
-                    <span class="cl-arrow">↗</span>
-                </a>
-                <a href="https://linkedin.com/in/lonnisjohnson" target="_blank" class="contact-link reveal">
-                    <span class="contact-type mono">LinkedIn</span>
-                    <span class="contact-value">linkedin.com/in/lonnisjohnson</span>
-                    <span class="cl-arrow">↗</span>
-                </a>
-                <a href="https://github.com/moxdrax" target="_blank" class="contact-link reveal">
-                    <span class="contact-type mono">GitHub</span>
-                    <span class="contact-value">github.com/moxdrax</span>
-                    <span class="cl-arrow">↗</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <span>© 2026 Lonnis Johnson</span>
-    </footer>
-
-    <button id="backToTop" title="Top">↑</button>
-
-    <script>
-
-        // Hamburger
-        const ham = document.getElementById('hamburger');
-        const mmenu = document.getElementById('mobileMenu');
-        ham.addEventListener('click', () => { ham.classList.toggle('open'); mmenu.classList.toggle('show'); });
-        document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', () => { ham.classList.remove('open'); mmenu.classList.remove('show'); }));
-
-        // Back to top
-        const btt = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => { btt.classList.toggle('visible', window.scrollY > 400); });
-        btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-        // Reveal
-        const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.08 });
-        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lonnis Johnson",
+        "jobTitle": "Software Tester",
+        "email": "mailto:lonnisjohnson@gmail.com",
+        "telephone": "+91-9633155080",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kochi",
+          "addressRegion": "Kerala",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/lonnisjohnson",
+          "https://github.com/lonnisjohnson"
+        ],
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Rajagiri College of Social Science (Autonomous)"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Rajagiri College of Management and Applied Science"
+          }
+        ]
+      }
     </script>
-</body>
-
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

@@ -163,110 +163,48 @@ export default function App() {
           <span className="section-num mono">02</span>
           <h2 className="section-title">Technical Skills</h2>
         </div>
-        <div className="skills-flat-grid">
-          <div className="skill-tile reveal">
-            <i className="devicon-playwright-plain"></i>
-            <span>Playwright</span>
+        <div className="skills-grouped reveal">
+          <div className="skill-row">
+            <span className="skill-category">Languages</span>
+            <div className="skill-chips">
+              {["Python","Java","JavaScript","TypeScript","PHP","C","C++"].map(s => <span key={s} className="skill-chip">{s}</span>)}
+            </div>
           </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-typescript-plain"></i>
-            <span>TypeScript</span>
+          <div className="skill-row">
+            <span className="skill-category">Frontend</span>
+            <div className="skill-chips">
+              {["React.js","HTML5","CSS3","Tailwind CSS"].map(s => <span key={s} className="skill-chip">{s}</span>)}
+            </div>
           </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-python-plain"></i>
-            <span>Python</span>
+          <div className="skill-row">
+            <span className="skill-category">Backend</span>
+            <div className="skill-chips">
+              {["Node.js","Django","Laravel"].map(s => <span key={s} className="skill-chip">{s}</span>)}
+            </div>
           </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-java-plain"></i>
-            <span>Java</span>
+          <div className="skill-row">
+            <span className="skill-category">Databases</span>
+            <div className="skill-chips">
+              {["MySQL","PostgreSQL","SQLite"].map(s => <span key={s} className="skill-chip">{s}</span>)}
+            </div>
           </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-javascript-plain"></i>
-            <span>JavaScript</span>
+          <div className="skill-row">
+            <span className="skill-category">Testing</span>
+            <div className="skill-chips">
+              {["Manual Testing","API Testing","Automation Testing","Playwright","Postman"].map(s => <span key={s} className="skill-chip">{s}</span>)}
+            </div>
           </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-php-plain"></i>
-            <span>PHP</span>
+          <div className="skill-row">
+            <span className="skill-category">Tools &amp; Systems</span>
+            <div className="skill-chips">
+              {["Git","GitHub","VS Code","Docker","Linux","Windows"].map(s => <span key={s} className="skill-chip">{s}</span>)}
+            </div>
           </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-c-plain"></i>
-            <span>C</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-cplusplus-plain"></i>
-            <span>C++</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-react-original"></i>
-            <span>React.js</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-nodejs-plain"></i>
-            <span>Node.js</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-express-original"></i>
-            <span>Express.js</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-fastapi-plain"></i>
-            <span>REST API</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-postman-plain"></i>
-            <span>Postman</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-html5-plain"></i>
-            <span>HTML5</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-css3-plain"></i>
-            <span>CSS3</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-tailwindcss-original"></i>
-            <span>Tailwind CSS</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-django-plain"></i>
-            <span>Django</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-laravel-plain"></i>
-            <span>Laravel</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-mysql-plain"></i>
-            <span>MySQL</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-postgresql-plain"></i>
-            <span>PostgreSQL</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-sqlite-plain"></i>
-            <span>SQLite</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-docker-plain"></i>
-            <span>Docker</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-linux-plain"></i>
-            <span>Linux</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-git-plain"></i>
-            <span>Git</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-github-original"></i>
-            <span>GitHub</span>
-          </div>
-          <div className="skill-tile reveal">
-            <i className="devicon-vscode-plain"></i>
-            <span>VS Code</span>
+          <div className="skill-row">
+            <span className="skill-category">Concepts</span>
+            <div className="skill-chips">
+              {["OOP","DBMS","STLC","SDLC","Test Case Design"].map(s => <span key={s} className="skill-chip">{s}</span>)}
+            </div>
           </div>
         </div>
       </section>
